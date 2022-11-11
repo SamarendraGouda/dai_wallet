@@ -1,51 +1,32 @@
-import React, { Component } from 'react';
-import logo from '../logo.png';
-import './App.css';
+import React from 'react';
+import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-          <a
-            className="navbar-brand col-sm-3 col-md-2 mr-0"
-            href="http://www.dappuniversity.com/bootcamp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dapp University
-          </a>
-        </nav>
-        <div className="container-fluid mt-5">
-          <div className="row">
-            <main role="main" className="col-lg-12 d-flex text-center">
-              <div className="content mr-auto ml-auto">
-                <a
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={logo} className="App-logo" alt="logo" />
-                </a>
-                <h1>Dapp University Starter Kit</h1>
-                <p>
-                  Edit <code>src/components/App.js</code> and save to reload.
-                </p>
-                <a
-                  className="App-link"
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LEARN BLOCKCHAIN <u><b>NOW! </b></u>
-                </a>
-              </div>
-            </main>
-          </div>
+
+const App = () => {
+
+  return (
+    <div>
+      <nav className='nav'>
+        <div>
+          DAI Wallet
+        </div>
+      </nav>
+      <div className='body'>
+        <div className='container'>
+          <h3>Welcome, user!</h3>
+          <img className="image" src='https://upload.wikimedia.org/wikipedia/commons/e/e7/Dai_Logo.png'/>
+          <h2>99999.25 DAI</h2>
+          <form className='form'>
+            <input placeholder='Address'></input>
+            <input placeholder='Amount'></input>
+            <button>Pay</button>
+          </form>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+
+    
+  );
+};
 
 export default App;
